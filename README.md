@@ -36,6 +36,4 @@ The dataset is fully artificial and does not contain any real personal informati
 To replicate the dataset generation process:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-pip install -r requirements.txt
+python dataset_generator.py
