@@ -8,7 +8,7 @@ The project focuses on evaluating anonymization techniques and tools such as ARX
 
 ## 📊 1. Dataset Generation
 
-The script `dataset_generator.py` generates a synthetic dataset of **10,000 records**, designed to mimic a university administrative database.
+The script `generate_students.py` generates a synthetic dataset of **10,000 records**, designed to mimic a university administrative database.
 
 The dataset is fully artificial and does not contain any real personal information.
 
@@ -36,4 +36,4 @@ The dataset is fully artificial and does not contain any real personal informati
 To replicate the dataset generation process:
 
 ```bash
-python dataset_generator.py
+python generate_students.py
