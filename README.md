@@ -1,31 +1,41 @@
-# Synthetic Student Dataset Generator
+# 🔐 Effectiveness and Adaptability of Open-Source Anonymization Tools
 
-This project generates a synthetic dataset of university students using Python.
+This repository contains the data generation engine and experimental configuration files used in the Master's dissertation project at **Transilvania University of Brașov (UNITBV)**.
 
-## Features
-- Generates 10,000 student records
-- Includes personal, academic, and medical attributes
-- Randomized but reproducible (seeded randomness)
-- Exports data to CSV format
+The project focuses on evaluating anonymization techniques and tools such as ARX and sdcMicro using synthetic datasets that simulate realistic university administrative data while ensuring full GDPR compliance.
 
-## Dataset Fields
+---
 
-| Column | Description |
-|------|------------|
-| name | Full name |
-| student_id | Unique student ID |
-| email | Generated email |
-| date_of_birth | Date of birth |
-| gender | Gender |
-| postal_code | Postal code |
-| degree_program | Field of study |
-| year_of_study | Academic year |
-| gpa | Grade point average |
-| scholarship | Scholarship status |
-| medical_indicator | Health condition flag |
+## 📊 1. Dataset Generation
 
-## How to run
+The script `dataset_generator.py` generates a synthetic dataset of **10,000 records**, designed to mimic a university administrative database.
+
+The dataset is fully artificial and does not contain any real personal information.
+
+### 🧾 Data Structure
+
+**Direct Identifiers:**
+- Name  
+- Student_ID  
+- Email  
+
+**Quasi-identifiers:**
+- Date of Birth  
+- Gender  
+- Postal Code  
+- Degree Program  
+- Year of Study  
+
+**Sensitive Attributes:**
+- Medical Indicator (used for l-diversity and t-closeness experiments)
+
+---
+
+## ⚙️ 2. Installation & Reproducibility
+
+To replicate the dataset generation process:
 
 ```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
 pip install -r requirements.txt
-python src/generate_dataset.py
